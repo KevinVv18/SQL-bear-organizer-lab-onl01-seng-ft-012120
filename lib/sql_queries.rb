@@ -15,7 +15,7 @@ def selects_oldest_bear_and_returns_name_and_age
 end
 
 def select_youngest_bear_and_returns_name_and_age
-  "SELECT name, age WHERE age(SELECT LOW(age) FROM beats)"
+  "SELECT name, age WHERE age(SELECT MIN(age) FROM beats)"
 end
 
 def selects_most_prominent_color_and_returns_with_count
